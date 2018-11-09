@@ -1,4 +1,4 @@
-Setup
+Setup:
 
 First clone this repo to your local directory.
 
@@ -19,7 +19,7 @@ Next, navigate to the bamazonCustomer.js and bamazonManager.js, and in the conne
 You are now ready to shop or manage Bamazon.
 
 
-Overview
+Overview:
 
 As mentioned in the video walkthrough, there are two CLI applications, bamazonCustomer.js and bamazonManager.js.
 
