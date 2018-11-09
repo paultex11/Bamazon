@@ -23,7 +23,7 @@ connection.connect(function(err) {
         connection.query('SELECT * FROM products', function(err, res) {
             if (err) reject(err);
             resolve(res);
-            console.log('Welcome to Bamazon! Here are our products:')
+            console.log('Welcome to Bamazon! Here Are Our Products:')
         });
         // Console log each item and increment the number of products
     }).then(function(result) {
@@ -44,7 +44,7 @@ connection.connect(function(err) {
 function enterStore() {
     inquirer.prompt([{
         name: 'entrance',
-        message: 'Would you like to shop with us today?',
+        message: 'How Can We Help You Today?',
         type: 'list',
         choices: ['Yes', 'No']
     }]).then(function(answer) {
@@ -53,7 +53,7 @@ function enterStore() {
             menu();
         } else {
             // Exist CLI if No
-            console.log('Please come back soon! --Bamazon');
+            console.log('Please Come Back Soon! --Bamazon');
             connection.destroy();
             return;
         }
@@ -64,7 +64,7 @@ function enterStore() {
 function menu() {
     return inquirer.prompt([{
         name: 'item',
-        message: 'Enter the item number of the product you would like to purchase.',
+        message: 'Enter The Item Number Of The Product You Would Like To Purchase.',
         type: 'input',
         // Validator to ensure the product number is a number and it exists
         validate: function(value) {
