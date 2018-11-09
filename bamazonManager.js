@@ -42,7 +42,7 @@ connection.connect(function(err) {
 function enterManagerApp() {
     inquirer.prompt([{
         name: 'entrance',
-        message: 'What would you like to do?',
+        message: 'What Would You Like To Do?',
         type: 'list',
         choices: ['View Products for Sale', 'View Low Inventory', 'Add to Inventory', 'Add New Product', 'EXIT']
     }]).then(function(answer) {
@@ -119,7 +119,7 @@ function lowInventory() {
 function addInventory() {
     return inquirer.prompt([{
         name: 'item',
-        message: 'Enter the item number of the product you would like to add stock to.',
+        message: 'Enter The Item Number Of The Product You Would Like To Add Stock To.',
         type: 'input',
         validate: function(value) {
             // Validator to ensure the product number is a number and it exists
@@ -132,7 +132,7 @@ function addInventory() {
         }
     }, {
         name: 'quantity',
-        message: 'How much stock would you like to add?',
+        message: 'How Much Stock Would You Like To Add?',
         type: 'input',
         // Validator to ensure it is number
         validate: function(value) {
@@ -177,7 +177,7 @@ function addInventory() {
 function addProduct() {
     return inquirer.prompt([{
         name: 'product',
-        message: 'Enter the name of the product you would like to add.',
+        message: 'Enter The Name Of The Product You Would Like To Add.',
         type: 'input',
         // Validator to ensure it is not left blank
         validate: function(value) {
@@ -190,7 +190,7 @@ function addProduct() {
         }
     }, {
         name: 'department',
-        message: 'Enter the name of the department where the product is located.',
+        message: 'Enter The Name Of The Department Where The Product Is Located.',
         type: 'input',
         // Validator to ensure it is not left blank
         validate: function(value) {
@@ -203,7 +203,7 @@ function addProduct() {
         }
     }, {
         name: 'price',
-        message: 'Enter the price of the product.',
+        message: 'Enter The Price Of The Product.',
         type: 'input',
         // Validator to ensure it is a valid number
         validate: function(value) {
@@ -216,7 +216,7 @@ function addProduct() {
         }
     }, {
         name: 'quantity',
-        message: 'Enter the amount of initial stock quantity.',
+        message: 'Enter The Amount Of Initial Stock Quantity.',
         type: 'input',
         validate: function(value) {
             // Validator to ensure it is a valid number
