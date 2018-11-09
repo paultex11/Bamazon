@@ -1,4 +1,5 @@
 Setup
+<b>
 First clone this repo to your local directory.
 
 Next, navigate to your repo in your command terminal, and enter:
